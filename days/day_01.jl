@@ -3,7 +3,7 @@ using Printf
 using RollingFunctions
 
 
-path_data = "data/01.txt"
+path_data = "data/day_01.txt"
 
 depths = parse.(Int, readlines(path_data))
 answer_1 = count(diff(depths) .> 0)
